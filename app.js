@@ -1,6 +1,9 @@
 const BASE_URL = 'https://ghibliapi.herokuapp.com/films/';
 // const IMAGE_BATH = 'https://image.tmdb.org/t/p/w600_and_h900_bestv2';
 const main = document.getElementById('main');
+const form = document.getElementById('form');
+const search = document.getElementById('search');
+
 getmovies(BASE_URL);
 
 function getmovies(url) {
@@ -48,8 +51,16 @@ function getColor(score) {
   }
 }
 
-function imagePath(arr) {
-  arr.forEach((movie) => {
-    console.log(movie.rt_score);
-  });
-}
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const searchTerm = search.value;
+  if (searchTerm) {
+    getmovies();
+  }
+});
+
+// function imagePath(arr) {
+//   arr.forEach((movie) => {
+//     console.log(movie.rt_score);
+//   });
+// }
