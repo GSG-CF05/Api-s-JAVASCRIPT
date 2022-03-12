@@ -12,15 +12,17 @@
   --placholder-color: #7378c5;
 }
 
-body {
-  font-size: 'poppins', sans-serif;
-  margin: 0;
-  /* display: flex;
+/* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   overflow: hidden; */
+
+body {
+  background-color: var(--primary-color);
+  font-family: 'poppins', sans-serif;
+  margin: 0;
 }
 header {
   padding: 1rem;
@@ -43,4 +45,13 @@ header {
 }
 .search::placeholder {
   color: var(--placholder-color);
+}
+
+/* //movie card style start  */
+
+.movie {
+  width: 300px;
+}
+.movie img {
+  width: 100%;
 }
