@@ -16,7 +16,7 @@ From the aspect related to the classification of the film or the story that the 
   - user can see movie's evaluation  .
   - user can read the movie's story and its category.	
 
-## Live Link : 
+## Live Link : https://gsg-cf05.github.io/Api-s-JAVASCRIPT/
 
 ## How do i get the project on my local machine !
   U have to install :
